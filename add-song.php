@@ -55,9 +55,11 @@
 		$song->setGenreId($genre_id);
 		$song->setPrice($price);
 		$song->save();
+
+		echo "<p>The song {$song->getTitle()} with an ID of {$song->getId()} was inserted successfully!</p>";
+
 	}
 ?>
-	<p>The song <?php echo $song->getTitle() ?> with an ID of <?php echo $song->getId() ?> was inserted successfully!</p>
 
 </body>
 </html>
